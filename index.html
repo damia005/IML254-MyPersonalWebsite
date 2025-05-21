@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Damia's Pink Diaries</title>
+  <link rel="shortcut icon" href="images/cherry_favicon.jpg" type="image/jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-image: url("images/whimsy_background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #4b004b;
+    }
+
+    h1.marquee-text {
+      font-size: 20px;
+      color: palevioletred;
+    }
+
+    h4, h3 {
+      text-shadow: 2px 2px 5px palevioletred;
+      text-align: center;
+    }
+
+    p.description, .caption, .purpose {
+      margin: 20px auto;
+      font-size: 16px;
+      text-align: center;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .profile-img {
+      display: block;
+      margin: 20px auto;
+      border: 5px solid palevioletred;
+      border-radius: 15px;
+      max-width: 50%;
+      height: auto;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    nav a {
+      background-color: pink;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #4b004b;
+      font-weight: bold;
+      box-shadow: 1px 1px 5px #ffb6c1;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ffb6c1;
+      color: white;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: maroon;
+      margin-top: 50px;
+      font-family: 'Poppins', cursive;
+      background-color: #fff5f7;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 768px) {
+      h1.marquee-text {
+        font-size: 16px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      p.description, .caption, .purpose {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline>
+    <source src="videos/banner.mp4" type="video/mp4">
+  </video>
+
+  <marquee><h1 class="marquee-text">Hii angel! So happy you're here :D Make yourself at home ⸜(｡˃ ᵕ ˂ )⸝</h1></marquee>
+
+  <hr>
+  <h3>˖✿˚⋆ Homepage ⋆˚✿˖</h3>
+  <hr>
+
+  <p class="description">
+    This little corner of the internet is where I share life, my loves, my thoughts, and everything in between.
+    I'm Damia, a girl who's all about soft pink, big dreams, cozy books, and loves eating yummies 🥪🍗.
+  </p>
+
+  <img src="images/me.jpg" class="profile-img" alt="This is a picture of me">
+  <p class="caption">Figure 1: This is me in my IML 257 class!</p>
+  <hr>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="education.html">My Education</a>
+    <a href="routine.html">My Routine</a>
+    <a href="hobbies.html">My Personal Interest</a>
+    <a href="me.html">Things That Make Me, Me</a>
+    <a href="contact.html">Contact Me</a>
+  </nav>
+  <hr>
+
+  <h3>The Purpose</h3>
+  <p class="purpose">
+    This website is created for my IML254 Individual Project. It's a glimpse into who I am, what I love, and how I live.
+    I hope you enjoy your visit! ⸜(｡˃ ᵕ ˂ )⸝♡
+  </p>
+
+  <footer>
+    <p>&copy; 2025 Damia's Pink Diaries 🍒 All rights reserved.</p>
+    <p>Last updated: 20 May 2025</p>
+    <p>Best viewed in Google Chrome or Microsoft Edge at 1920×1080 resolution</p>
+  </footer>
+
+</body>
+</html>
