@@ -56,13 +56,20 @@
       color: white;
     }
 
+    .table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 20px 0;
+    }
+
     table {
-      margin: 20px auto;
+      margin: 0 auto;
       border-collapse: collapse;
       width: 100%;
       background-color: #fff0f5;
       color: #4b004b;
       text-align: center;
+      min-width: 600px;
     }
 
     th, td {
@@ -93,10 +100,15 @@
     @media (max-width: 768px) {
       table {
         font-size: 14px;
+        width: 1000px; /* force scroll */
       }
 
       nav {
         flex-direction: column;
+      }
+
+      .table-wrapper {
+        width: 100%;
       }
     }
   </style>
@@ -120,50 +132,52 @@
     <hr>
     <h4>♡ What My Class Schedule Looks Like ♡</h4>
 
-    <table>
-      <tr>
-        <th>Day</th>
-        <th>Morning</th>
-        <th>Afternoon</th>
-        <th>Evening</th>
-        <th>Night</th>
-      </tr>
-      <tr>
-        <td>Sunday</td>
-        <td>IML254 (8–10 AM)</td>
-        <td>Rest/Shower/Breakfast/Studying</td>
-        <td>IML255 (3–6 PM)</td>
-        <td>Relax/Scroll/Study/Assignment/Sleep</td>
-      </tr>
-      <tr>
-        <td>Monday</td>
-        <td>Wake up / Relax / Assignment</td>
-        <td>IML257 (12–2 PM)</td>
-        <td>IML256 (4–6 PM)</td>
-        <td>Relax/Scroll/Study/Assignment/Sleep</td>
-      </tr>
-      <tr>
-        <td>Tuesday</td>
-        <td>Wake up / Relax / Assignment</td>
-        <td>IMC258 (12–2 PM)</td>
-        <td>Dinner/Shower/Relax</td>
-        <td>Study/Sleep</td>
-      </tr>
-      <tr>
-        <td>Wednesday (Packed!)</td>
-        <td>IML256 (10–12 PM)</td>
-        <td>IML254 (12–2 PM)</td>
-        <td>IML257 (3–4 PM)</td>
-        <td>Relax/Scroll/Study/Assignment/Sleep</td>
-      </tr>
-      <tr>
-        <td>Thursday</td>
-        <td>IMC258 (9–10 AM)</td>
-        <td>Rest/Shower/Breakfast/Study</td>
-        <td>Assignment/Relax</td>
-        <td>Relax/Scroll/Study/Assignment/Sleep</td>
-      </tr>
-    </table>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Morning</th>
+          <th>Afternoon</th>
+          <th>Evening</th>
+          <th>Night</th>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>IML254 (8–10 AM)</td>
+          <td>Rest/Shower/Breakfast/Studying</td>
+          <td>IML255 (3–6 PM)</td>
+          <td>Relax/Scroll/Study/Assignment/Sleep</td>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Wake up / Relax / Assignment</td>
+          <td>IML257 (12–2 PM)</td>
+          <td>IML256 (4–6 PM)</td>
+          <td>Relax/Scroll/Study/Assignment/Sleep</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Wake up / Relax / Assignment</td>
+          <td>IMC258 (12–2 PM)</td>
+          <td>Dinner/Shower/Relax</td>
+          <td>Study/Sleep</td>
+        </tr>
+        <tr>
+          <td>Wednesday (Packed!)</td>
+          <td>IML256 (10–12 PM)</td>
+          <td>IML254 (12–2 PM)</td>
+          <td>IML257 (3–4 PM)</td>
+          <td>Relax/Scroll/Study/Assignment/Sleep</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>IMC258 (9–10 AM)</td>
+          <td>Rest/Shower/Breakfast/Study</td>
+          <td>Assignment/Relax</td>
+          <td>Relax/Scroll/Study/Assignment/Sleep</td>
+        </tr>
+      </table>
+    </div>
 
     <p><i>Table 1.0: My Class Schedule</i></p>
 
@@ -171,48 +185,50 @@
     <h4>♡ My Chill Routine for Weekend ♡</h4>
     <p style="max-width: 750px; margin: auto;">During weekends, I slow down, recharge, and I need some space to realign, but still I need to get some things done.</p>
 
-    <table>
-      <tr>
-        <th>Time</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-      </tr>
-      <tr>
-        <td>6:30 AM – 9:00 AM</td>
-        <td>Wake up, dormscrolling, shower, breakfast 🍳</td>
-        <td>Wake up, dormscrolling, shower, breakfast ☕</td>
-      </tr>
-      <tr>
-        <td>9:00 AM – 12:00 PM</td>
-        <td>Weekly cleaning EVERYTHING, laundry 🧼</td>
-        <td>Finish some more of laundry, reading or jotting my thoughts (my mind always so loud) 📖</td>
-      </tr>
-      <tr>
-        <td>12:00 PM – 2:00 PM</td>
-        <td>Lunch while wacthing Evelyn HA vlog, assingment 🍛</td>
-        <td>Lunch while wacthing Ted Talk on YouTube, tick down some tasks✅</td>
-      </tr>
-      <tr>
-        <td>2:00 PM – 4:00 PM</td>
-        <td>Rest / Quran / Scroll phone/ Continue wacthing vlog 🙂</td>
-        <td>Nap or YouTube sheesh! 😴📺</td>
-      </tr>
-      <tr>
-        <td>4:00 PM – 6:00 PM</td>
-        <td>Stu(dying) / Me-time 🌸</td>
-        <td>Stu(dying) / YouTube</td>
-      </tr>
-      <tr>
-        <td>6:00 PM – 9:00 PM</td>
-        <td>Shower, dinner, YouTube lol</td>
-        <td>Shower, dinner, chill 😈📚</td>
-      </tr>
-      <tr>
-        <td>9:00 PM – 12:00 AM</td>
-        <td>Dormscrolling, read my novel, sleep early 😊😶‍🌫️</td>
-        <td>Read horror on fiksyen syasya or dormscrolling, then sleep 😴</td>
-      </tr>
-    </table>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <td>6:30 AM – 9:00 AM</td>
+          <td>Wake up, dormscrolling, shower, breakfast 🍳</td>
+          <td>Wake up, dormscrolling, shower, breakfast ☕</td>
+        </tr>
+        <tr>
+          <td>9:00 AM – 12:00 PM</td>
+          <td>Weekly cleaning EVERYTHING, laundry 🧼</td>
+          <td>Finish laundry, reading or jotting my thoughts 📖</td>
+        </tr>
+        <tr>
+          <td>12:00 PM – 2:00 PM</td>
+          <td>Lunch + Evelyn HA vlog + assignment 🍛</td>
+          <td>Lunch + Ted Talk, tick down some tasks ✅</td>
+        </tr>
+        <tr>
+          <td>2:00 PM – 4:00 PM</td>
+          <td>Rest / Quran / Scroll / Vlog 🙂</td>
+          <td>Nap or YouTube sheesh! 😴📺</td>
+        </tr>
+        <tr>
+          <td>4:00 PM – 6:00 PM</td>
+          <td>Stu(dying) / Me-time 🌸</td>
+          <td>Stu(dying) / YouTube</td>
+        </tr>
+        <tr>
+          <td>6:00 PM – 9:00 PM</td>
+          <td>Shower, dinner, YouTube lol</td>
+          <td>Shower, dinner, chill 😈📚</td>
+        </tr>
+        <tr>
+          <td>9:00 PM – 12:00 AM</td>
+          <td>Dormscrolling, novel, sleep early 😊😶‍🌫️</td>
+          <td>Read horror on Fiksyen Syasya, then sleep 😴</td>
+        </tr>
+      </table>
+    </div>
 
     <p><i>Table 1.1: My Weekend Routine</i></p>
   </div>
